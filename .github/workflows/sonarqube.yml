@@ -30,6 +30,7 @@ jobs:
             -Dsonar.qualitygate.wait=true
             -Dsonar.working.directory=target/.sonar
             -Dsonar.sarifReportPaths=result.sarif
+            -X
             
       - name: Upload report-task.txt
         uses: actions/upload-artifact@v4
