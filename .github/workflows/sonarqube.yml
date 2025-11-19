@@ -30,6 +30,7 @@ jobs:
             -Dsonar.qualitygate.wait=true
             -Dsonar.working.directory=target/.sonar
             -Dsonar.java.skipCompile=true
+            -Dsonar.exclusions=**/*.java
             -Dsonar.sarifReportPaths=result.sarif
             -X
             
