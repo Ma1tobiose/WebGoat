@@ -8,7 +8,7 @@ on:
 name: Sonarqube SAST Scan
 jobs:
   sonarqube:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
       - name: SAST Checkout code
         uses: actions/checkout@v4
